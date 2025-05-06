@@ -1,10 +1,9 @@
-import SpreadOperator from "@/components/SpreadOperator";
-
+import Contador from "@/components/contador/Contador";
 
 export default function Home() {
   return (
     <>
-      <SpreadOperator />
+      <Contador />
     </>
   );
 }
