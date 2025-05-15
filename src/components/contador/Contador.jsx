@@ -1,67 +1,22 @@
 import { useReducer } from "react"
+import { TYPES } from "@/counterReducer/counterActions"
+import { reducer } from "@/counterReducer/counterReducer"
+import { initialState } from "@/counterReducer/counterInicialState"
 
 
 const Contador = () => {
 
-    // CAREPTA REDUCER
-    // initialstate.js
-    // reducer.js
-    // actions.js
-
-    const initialState = {
-        contador: 0,
-        visible: false,
-    }
-
-    function reducer(state, action) {
-        switch (action.type) {
-            // CONTADOR
-            case "INCREMENTAR": {
-                return {
-                    ...state,
-                    contador: state.contador - 1
-                }
-            }
-            case "RESETEAR":
-                return initialState;
-            case "DECREMENTAR": {
-                    return {
-                        ...state,
-                        contador: state.contador + 1
-                    }
-                }
-
-            // VISIBLE
-            case "MOSTRAR": {
-                return {
-                    ...state,
-                    visible: true
-                }
-            }
-
-            case "OCULTAR": {
-                return {
-                    ...state,
-                    visible: false
-                }
-            }
-            default:
-                return state;
-        }
-    }
-
     const [state, dispatch] = useReducer(reducer, initialState)
 
-
-    const decrementar = () => dispatch({type: "DECREMENTAR"})
+    const decrementar = () => dispatch({type: TYPES.DECREMENTAR})
        
-    const restear = () => dispatch({type: "RESETEAR"})
+    const restear = () => dispatch({type: TYPES.RESETEAR})
 
-    const incrementar = () => dispatch({type: "INCREMENTAR"})
+    const incrementar = () => dispatch({type: TYPES.INCREMENTAR})
 
-    const mostrar = () => dispatch({type: "MOSTRAR"})
+    const mostrar = () => dispatch({type: TYPES.MOSTRAR})
 
-    const ocultar = () => dispatch({type: "OCULTAR"})
+    const ocultar = () => dispatch({type: TYPES.OCULTAR})
 
   return (
     <>
