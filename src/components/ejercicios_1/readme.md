@@ -28,4 +28,4 @@ Especificaciones:
 que tenga una propiedad titulo con el valor 'Datos cargados con useEffect'.
 - Debes limpiar la funcionalidad en el retorno del useEffect.
 - En el JSX se debe mostrar un condicional que, de ser verdadero, muestre el titulo del
-objeto y de ser falso muestre un <p> que diga 'Cargando datos...'
+objeto y de ser falso muestre un parrafo que diga 'Cargando datos...'
