@@ -1,4 +1,4 @@
-## Ejercicios 1
+## Ejercicio 1
 
 Crear un componente de Tarjeta que se vea exactamente con la tarjeta de la imagen:
 <img src="https://ibb.co/Vc7DHcty">
