@@ -1,7 +1,7 @@
 ## Ejercicio 1
 
 Crear un componente de Tarjeta que se vea exactamente con la tarjeta de la imagen:
-<img src="https://ibb.co/Vc7DHcty">
+<img src="[https://ibb.co/Vc7DHcty](https://ibb.co/Vc7DHcty)">
 
 Especificaciones:
 - El Boton debe ser un componente a parte.
